@@ -1,0 +1,16 @@
+
+grant select,insert,update,delete on module3.* to wustl_inst@'localhost';
+
+create table user( username varchar(15) not null, saltedhash char(255) not null, primary key (username));
+
+
+create table stories ( story_id mediumint unsigned not null auto_increment, username varchar(15) not null, texts text not null, link text, ratings mediumint unsigned not null, timeposted timestamp not null default current_timestamp, primary key (story_id), foreign key (username) references user(username) on delete cascade);
+
+
+create table comments ( comment_id mediumint unsigned not null auto_increment, story_id mediumint unsigned not null, username varchar(15) not null, texts text not null, ratings mediumint unsigned not null, timeposted timestamp not null default current_timestamp,  primary key (comment_id), foreign key (story_id) references stories(story_id) on delete cascade, foreign key (username) references user(username) on delete cascade);
+
+https://stackoverflow.com/questions/871858/php-pass-variable-to-next-page
+
+insert into stories (username,texts) values ('huydo','fsldkfj');
+
+//  may have to do ON UPDATE CURRENT_TIMESTAMP

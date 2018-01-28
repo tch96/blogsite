@@ -1,0 +1,189 @@
+.topcorner {
+  position: fixed;
+  text-align:right;
+  top:0;
+  right:0;
+  padding: 5px;
+  margin: 5px 5px 5px 5px
+}
+.login {
+  border-radius:8px;
+  border: 2px solid;
+  transition-duration: 0.3s;
+}
+.login:hover{
+  color: white;
+  background-color:grey;
+}
+#titlebar {
+  background-color: #444970;
+  border: 1px solid black;
+  color: #ffffff;
+  position: static;
+  top: 0;
+  left: 0;
+  width:73%;
+  font-size: xx-large;
+  padding: 10px 0px 10px 10px;
+  display: block;
+}
+#undertitlebar{
+  top: 500;
+  position: fixed;
+}
+
+#setViewOrder {
+  background-color: red;
+  color: white;
+  margin: 0px 10px 20px 0px;
+  display: block;
+  position: fixed;
+  border: 2px solid black;
+  z-index:1;
+
+}
+#storyfeed {
+  position:fixed;
+  width: 74%;
+  height: 88%;
+  bottom:0;
+  left:0;
+  margin: 5px;
+  overflow:scroll;
+  overflow-x:hidden;
+
+}
+.stories {
+  width:95%;
+  float: left;
+  margin: 5px 10px;
+  border: 0.5px solid black;
+  padding: 10px 10px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.storyTitle {
+  display: block;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.storyContent {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.subStory {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-style: italic;
+  font-size: small;
+}
+.modStory {
+  position: block;
+  margin:5px;
+}
+.viewComments {
+  position: absolute;
+  bottom:0;
+  right:0;
+  margin:5px;
+}
+#commentfeed {
+  position:fixed;
+  width: 25%;
+  height: 86%;
+  bottom:0;
+  right:0;
+  padding:10px;
+  margin: 0px;
+  overflow:scroll;
+  overflow-x:hidden;
+
+}
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ba2e2e;
+}
+.comments {
+  border: 1px solid black;
+  position: inline;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.comments > span {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: x-small;
+}
+.comments > p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+}
+form >input[type=submit] {
+  background-color:white;
+  border:1px solid grey;
+  border-radius: 4px;
+}
+form > input[type=submit]:hover {
+  font-weight:bold;
+}
+.mod > input[type=submit] {
+  background-color: white;
+  border:white;
+  color:grey;
+  font-size: x-small;
+}
+.mod > input[type=submit]:hover {
+  font-weight:bold;
+  color:black;
+}
+.TREMENDOUS > button {
+  border: 1px solid #0a3c59;
+ background: #ababab;
+ background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ababab));
+ background: -webkit-linear-gradient(top, #ffffff, #ababab);
+ background: -moz-linear-gradient(top, #ffffff, #ababab);
+ background: -ms-linear-gradient(top, #ffffff, #ababab);
+ background: -o-linear-gradient(top, #ffffff, #ababab);
+ background-image: -ms-linear-gradient(top, #ffffff 0%, #ababab 100%);
+ padding: 3px 6px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+ -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+ box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+ text-shadow: #7ea4bd 0 1px 0;
+ color: #141b1f;
+ font-size: 9px;
+ font-family: helvetica, serif;
+ text-decoration: none;
+ vertical-align: middle;
+   }
+.TREMENDOUS >button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #3e6c8a 0 1px 0;
+   background: #e5f26d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#e8a348), to(#e5f26d));
+   background: -webkit-linear-gradient(top, #e8a348, #e5f26d);
+   background: -moz-linear-gradient(top, #e8a348, #e5f26d);
+   background: -ms-linear-gradient(top, #e8a348, #e5f26d);
+   background: -o-linear-gradient(top, #e8a348, #e5f26d);
+   background-image: -ms-linear-gradient(top, #e8a348 0%, #e5f26d 100%);
+   color: #000000;
+   }
+.TREMENDOUS >button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff0505), to(#e5f26d));
+   background: -webkit-linear-gradient(top, #ff0505, #65a9d7);
+   background: -moz-linear-gradient(top, #ff0505, #65a9d7);
+   background: -ms-linear-gradient(top, #ff0505, #65a9d7);
+   background: -o-linear-gradient(top, #ff0505, #65a9d7);
+   background-image: -ms-linear-gradient(top, #ff0505 0%, #65a9d7 100%);
+   color: #fff;
+   }
